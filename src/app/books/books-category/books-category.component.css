@@ -1,0 +1,80 @@
+
+.container {
+    padding: 30px;
+    background-color:var(--primary-theme);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.genre {
+   list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 18px;
+}
+
+h1 {
+    color: var(--primary-color);
+}
+
+p {
+    font-family: Montserrat,Semi bold;
+    font-size: 25x;
+}
+
+.genre-item {
+    
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.genre-card{
+    background-color: white;
+    height: 50px;
+    border-radius:4px;
+    padding: 10px 10px 10px 5px;
+    box-shadow: 0 2px 5px 0 rgba(211, 209,238,0.5);
+    font-size: 20px;
+    font-family: Montserrat,Regular;
+    font-weight: bold;
+    margin-bottom: 37px;
+}
+
+
+.genre-item:nth-child(even) .genre-card{
+    margin-left: 30px;
+        }
+
+.genre-card .next{
+    float: right;
+    cursor: pointer;
+}
+.genre-card .icon{
+    height: 30px;
+    width: 28px;
+    /* float: left; */
+    margin: 0;
+    margin-right: 13px;
+    margin-left: 9px;
+}
+
+.genre-title {
+    background-image: url(./../../../assets/Pattern.svg);
+    width: 100%;
+    padding: 25px;
+}
+
+
+@media only screen and (max-width: 1080px) {
+    .genre .genre-item{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .genre-item:nth-child(even) .genre-card{
+     margin-left: 0px;
+    }
+}
+
